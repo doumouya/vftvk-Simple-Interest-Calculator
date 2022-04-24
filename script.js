@@ -1,3 +1,9 @@
+/* 
+I used a for loop to calculate the interest according to number of years. The fonction take principal, rate and years as parameters. 
+I add the unary '+' to perform calculation with data.
+The function return the sum of the investment and the interest made
+*/
+
 function calcInterest(principal, rate, years) {
     var interest = 0;
     for (var i = 0; i < years; i++)
@@ -8,10 +14,22 @@ function calcInterest(principal, rate, years) {
     return principal;
 }
 
+/*
+    the function updateRate() is used to dynamically display the value on the rate while the user move the thumb of the slider
+*/
+
 function updateRate() {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerHTML=rateval+"%";
 }
+
+/* 
+    the function compute() if the main function of my JS program. All the  important variables for coding the logic are declared here.
+
+    first I check if the amount is a number with "isNaN()" and also if it'q 0 zero.
+    if it's not, an alert message ask the user to enter a valid number and empty the text field
+    if it's a correct value, the function display the user query.
+*/
 
 function compute() {
     var principal = document.getElementById("principal").value;
