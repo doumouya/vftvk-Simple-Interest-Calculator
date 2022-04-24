@@ -26,7 +26,7 @@ function compute() {
         document.getElementById("principal").value="";
     }
     else {
-        document.getElementById("result").innerHTML = "If you deposit " +principal+ ",\<br\>at an interest rate of "+rate+ "%. \<br\>You will receive an amount of "+ (+result.toFixed(2)) + ",\<br\>in the year "+year
+        document.getElementById("result").innerHTML = 'If you deposit <span class="showdata">' +principal+ '</span>,<br>at an interest rate of <span class="showdata">'+rate+'%</span>. ' + ' <br>You will receive an amount of <span class="showdata">'+ (+result.toFixed(2)) + '</span>,<br>in the year <span class="showdata">'+year+'</span>'
     }
 }
 
