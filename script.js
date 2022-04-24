@@ -6,11 +6,14 @@ The function return the sum of the investment and the interest made
 
 function calcInterest(principal, rate, years) {
     var interest = 0;
+    /*
     for (var i = 0; i < years; i++)
     {
         interest = (+principal) * (+rate) / 100;
         principal = (+principal) + (+interest)
     }
+    */
+    principal = (+principal) * (+years) * (+rate) /100;
     return principal;
 }
 
@@ -35,7 +38,7 @@ function compute() {
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    var result = calcInterest(principal, rate, years) - (+principal);
+    var result = calcInterest(principal, rate, years)/* - (+principal)*/;
     var year = new Date().getFullYear()+parseInt(years);
 
     if (isNaN(principal) || principal <= 0)
