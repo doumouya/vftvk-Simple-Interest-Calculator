@@ -55,24 +55,14 @@ input[type="range"] {
     margin: 2%;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type='range'] {
-      border-radius: 8px;
-      margin: 2%;
-      width: 96%;
-      height: 2%;
-      -webkit-appearance: none;
-      background-color: black;
-    }
-    
-    input[type='range']::-webkit-slider-runnable-track {
-      -webkit-appearance: none;
-    }
-    
-    input[type='range']::-webkit-slider-thumb {
-      cursor: pointer;
-    }
-
+input[type='range'] {
+    border-radius: 8px;
+    margin: 2%;
+    width: 96%;
+    height: 8px;
+    -webkit-appearance: none;
+    background-color: black;
+    cursor: pointer;
 }
 
 label {
